@@ -1,0 +1,42 @@
+<section class="vh-90 d-flex justify-content-center align-items-center flex-column">
+    <app-star [titleStar]="'conatct section'" [customColor]="'#2c3e50'"></app-star>
+    <form action="" class="w-50 mx-auto">
+        <label for="userName" class="text-sec my-2 position-relative top-0" 
+        [class.top-40]="!userName.length">userName :</label>
+        <input type="text"
+        placeholder="userName"
+        name="userName"
+        id="userName"
+        [(ngModel)]="userName"
+        class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"/>
+
+        <label for="userAge" class="text-sec my-2 position-relative top-0" 
+        [class.top-40]="!userAge">userAge :</label>
+        <input type="number"
+        placeholder="userAge"
+        name="userAge"
+        id="userAge"
+        [(ngModel)]="userAge"
+        class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"/>
+
+        <label for="userEmali" class="text-sec my-2 position-relative top-0" 
+        [class.top-40]="!userEmail">userEmali :</label>
+        <input type="text"
+        placeholder="userEmali"
+        name="userEmali"
+        id="userEmali"
+        [(ngModel)]="userEmail"
+        class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"/>
+
+        <label for="userPassword" class="text-sec my-2 position-relative top-0" 
+        [class.top-40]="!userPassword">userPassword :</label>
+        <input type="text"
+        placeholder="userPassword"
+        name="userPassword"
+        id="userPassword"
+        [(ngModel)]="userPassword"
+        class="form-control shadow-none border-top-0 border-start-0 border-end-0 position-relative my-2"/>
+        <button class="btn-main mt-3">Send Massage</button>
+    </form>
+    
+</section>

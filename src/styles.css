@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --min-clr: #2C3E50;
+    --sec-clr: #1ABC9C;
+}
+
+.bg-main {
+    background-color: var(--min-clr);
+}
+
+.text-main {
+    color: var(--min-clr);
+}
+
+.bg-sec {
+    background-color: var(--sec-clr);
+}
+
+.text-sec {
+    color: var(--sec-clr);
+}
+.btn-main{
+    background-color: var(--sec-clr);
+    padding: 10px 25px;
+    color: #ffffff;
+    outline: unset;
+    border: none;
+    border-radius: 10px;
+}
+a,a:active{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.pt-105{
+    padding-top: 105px;
+}
+
+.vh-90{
+    height: 90vh;
+}
+
+
+@media (max-width: 1199.98px) { 
+    .pt-105{
+        padding-top: 95px;
+    }
+}

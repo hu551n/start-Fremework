@@ -1,0 +1,13 @@
+figcaption{
+    opacity: 0;
+    transition:opacity 0.6s ;
+    cursor: pointer;
+
+}
+figure:hover figcaption{
+    opacity: 1;
+}
+img{
+    z-index: 999;
+    
+}

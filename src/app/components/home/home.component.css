@@ -1,0 +1,9 @@
+.line{
+    height: 4px;
+    width: 90px;
+    background: #fff;
+}
+section{
+    display: flex;
+    
+}

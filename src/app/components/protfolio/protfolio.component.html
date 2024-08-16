@@ -1,0 +1,28 @@
+<section class=" py-5 d-flex justify-content-center align-items-center flex-column">
+    <app-star [titleStar]="'portfolio component'" [customColor]="'#2c3e50'"></app-star>
+    <div class="container">
+        <div class="row">
+            @for (src of PortfolioSrc; track $index) {
+            <div class="col-lg-4 col-md-6">
+                <figure class="position-relative overflow-hidden">
+                    <img [src]="src" class="w-100 rounded-3" alt="poert">
+                    <figcaption (click)="flag = false ; modelImg = src"
+                        class="position-absolute bg-sec rounded-3  start-0 top-0 d-flex justify-content-center align-items-center w-100 h-100">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </figcaption>
+                </figure>
+            </div>
+            }
+
+        </div>
+    </div>
+</section>
+<div
+(click)="hideModel($event.target, img)"
+ [class.d-none]="flag"
+    class="model position-fixed start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center bg-primary bg-opacity-25">
+    <img #img [src]="modelImg"
+    class="rounded-3"
+    width="650"
+    alt="poert1">
+</div>
